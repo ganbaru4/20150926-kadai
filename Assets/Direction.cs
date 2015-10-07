@@ -11,6 +11,7 @@ public class Direction : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//		target = GameObject.Find("escapeB").transform; 
+		transform.rotation = Quaternion.LookRotation (target.position - transform.position);
 	}
 	
 	// Update is called once per frame
